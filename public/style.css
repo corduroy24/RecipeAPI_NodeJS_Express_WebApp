@@ -1,0 +1,65 @@
+body{
+	background-color:#333;  
+	color:white;
+	font-size: 30px;
+}
+
+h1{
+	font-family:Brush Script Std, Brush Script MT, cursive;
+	color:#C0C0C0;
+	text-shadow: 2px 2px #000;
+	font-size: 80px;
+}
+button{
+	margin-top:5px;
+	border-radius:5px;
+	width:110px;
+	font-size: 30px;
+	padding:4px;
+	color:white;
+}
+select{
+	font-size: 25px;
+}
+
+#recipeViewButton{
+	background-color:green;
+}
+#recipeSubmitButton{ 
+	background-color:purple;
+	margin:auto;
+	width: 40%;
+}
+
+form{ 
+	border:solid 2px silver;
+	border-radius: 10px;
+	padding: 5px;
+	color:black;
+	background-color:#ADD8E6;
+	box-shadow:3px 3px #000;
+}
+
+.check{
+	color:#0f0;
+}
+
+label{
+	font-weight:bold;
+	font-size: 25px;
+}
+
+a{
+	color: hotpink; 
+	float: right;
+}
+
+	
+a:link{
+	font-size: 40px;
+	color: hotpink; 
+}
+a:active{
+	color: green; 
+}
+

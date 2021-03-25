@@ -1,0 +1,64 @@
+doctype html
+html
+if user && user.auth
+		head
+				meta(charset='utf-8')
+				title Comp2406 Recipe Database!
+				link(rel='stylesheet', type='text/css', href='style.css')
+				script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+				script(src='recipePage.js')
+
+		body
+				h1 Comp2406 Recipe Database!
+						h2 Recipe:
+						|  
+						select#recipeSelect.dropbtn(name='dropDownMenu')
+								option.dropdown-content
+						br
+						br
+						|  
+				button#recipeViewButton.buttonsView(type='view') View
+				|
+				a(href="/logout") Logout				
+				br
+				br
+				div
+						form#labelArea
+
+								fieldset#Height
+										label(for='name') Name
+										br
+										|  
+										input#recipeName(type='text', name='Name')
+										br
+										|  
+										label(for='duration') Duration
+										br
+										|  
+										input#recipeDuration(type='text', name='Duration')
+										br
+										|  
+										label(for='ingredients') Ingredients
+										br
+										|  
+										textarea#recipeIngredients(cols='150', rows='8')
+										br
+										|  
+										label(for='steps') Steps
+										br
+										|  
+										textarea#recipeDirections(cols='150', rows='8')
+										br
+										|		  
+										label(for='notes') Notes
+										br
+										|  
+										textarea#recipeNotes(cols='150', rows='8')
+				div
+				br
+				button#recipeSubmitButton.buttonsSubmit(type='view') Submit
+				img.check#confirmed(src='greenCheckMark.png')
+							
+else
+	h2(style={color:'darkred'}) Not logged in.
+	p Please visit the #[a(href='/login') login page] to get started.
